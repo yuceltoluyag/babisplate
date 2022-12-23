@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+@import url(https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700);
+
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Old Standard TT", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  background: #d0e4f2;
+}
+
+header {
+  background: #1a1f2b;
+  /* height: 50px; */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  #container {
+    width: 960px;
+    margin: 0 auto;
+
+    h2 {
+      line-height: 50px;
+      display: inline-block;
+      margin-right: 50px;
+
+      a {
+        color: white;
+      }
+    }
+
+    nav {
+      display: inline-block;
+
+      li {
+        display: inline-block;
+        margin-right: 30px;
+
+        a {
+          text-decoration: none;
+          color: #85a5cc;
+          display: inline-block;
+
+          &:hover,
+          &:active {
+            color: #4a6491;
+          }
+        } // a
+      } // li
+    } // nav
+  } // #container
+} // header
+
+#main {
+  width: 960px;
+  margin: 0 auto;
+
+  #post-list {
+    padding-top: 70px;
+    .post {
+      width: 90%;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+
+      h2 {
+        margin-bottom: 12px;
+        font-weight: bold;
+      }
+    } // .post
+  } // #post-list
+} // #main
